@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, rgb(10, 72, 158), rgb(44, 150, 243));
+    color: rgb(255, 204, 0);
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-bar a {
+    color: rgb(255, 204, 0);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.nav-bar a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.tracking-section {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 32px;
+}
+
+.tracking-section h2 {
+    font-size: 30px;
+    color: rgb(10, 72, 158);
+    margin-bottom: 8px;
+}
+
+.tracking-section p {
+    margin-bottom: 16px;
+}
+
+.tracking-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tracking-form input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid rgb(10, 72, 158);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+.tracking-form button {
+    padding: 8px 25px;
+    background-color: rgb(10, 72, 158);
+    color: rgb(255, 204, 0);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.tracking-form button:hover {
+    background-color: rgb(44, 150, 243);
+    color: rgb(255, 233, 145);
+}
+
+
+.motive-section {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 48px 32px;
+}
+
+.motive-content {
+    flex: 1;
+}
+
+.motive-content h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: rgb(10, 72, 158);
+}
+
+.motive-content p {
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.motive-image img {
+    width: 800px;
+    margin-top: -10px;
+    margin-left: -50px;
+    max-width: 100%;
+    height: auto;
+}
+
+#services {
+    padding: 48px 32px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 32px;
+    color: rgb(10, 72, 158);
+    margin-bottom: 32px;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+}
+
+.service-card {
+    background-color: rgb(10, 72, 158);
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: rgb(255, 204, 0);
+    margin-bottom: 8px;
+}
+
+.service-card img {
+    max-width: 80px;
+    margin-bottom: 16px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: whitesmoke;
+}
+
+#about {
+    padding: 48px 32px;
+    background-color: rgb(10, 72, 158);
+    color: rgb(255, 204, 0);
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    max-height: 500px;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 16px;
+    color: rgb(255, 204, 0);
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: whitesmoke;
+    text-align: justify;
+}
+
+#about img {
+    margin-top: -48px;
+    width: 700px;
+}
+
+.about-text {
+    margin-top: -100px;
+    flex: 1;
+    min-width: 250px;
+}
+
+
+footer {
+    background-color: rgb(10, 72, 158);
+    color: whitesmoke;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+footer#contact {
+    background: linear-gradient(to right, #003b88, #4e89d5);
+    color: whitesmoke;
+    padding: 32px 16px;
+    text-align: center;
+}
+
+footer#contact p {
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: rgb(255, 204, 0);
+}
+
+footer#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+footer#contact ul li {
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+footer#contact ul li:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
